@@ -58,4 +58,4 @@ Each txt-file is structured as follows:
 	- the item flatness (1 if the surface of the item is flat, 0 if it is not) 
 	- the customer index (c_i, only for REALISTIC_C)
 
-Finally, the Python file ``.py'' can be used to visualize the optimal packing layout generated in ``./PATH_AND_NAME_OUTPUT_PICTURE''. One can simply run the Python code after changing the path of the picture file within the code.
+Finally, the Python file ".py" can be used to visualize the optimal packing layout generated in "./PATH_AND_NAME_OUTPUT_PICTURE". One can simply run the Python code after changing the path of the picture file within the code.
