@@ -28,12 +28,13 @@ Each folder contains the same substructure. For example, 2_SEQ contains the foll
 - makefile: used for compiling under linux (it needs to be updated by the user)
 
 Once compiled, the following command can be used to run the algorithm:
-	./PROGRAM "./PATH_INSTANCE" "NAME_INSTANCE" "./PATH_AND_NAME_OUTPUT_GENERAL" 
+	./PROGRAM "./PATH_INSTANCE" "NAME_INSTANCE" "./PATH_AND_NAME_OUTPUT_GENERAL" "./PATH_AND_NAME_OUTPUT_PICTURE"  
 where
 - PROGRAM is the name of the compiled software (e.g., SEQ)
 - ./PATH_INSTANCE is the relative path of the folder where the instance to solve is located
 - NAME_INSTANCE is the name of the instance to solve
 - ./PATH_AND_NAME_OUTPUT_GENERAL is the name of the file (together with its relative path) where performance metrics (such as the optimality status, the CPU time required, or the number of variables) are stored after solving an instance
+- ./PATH_AND_NAME_OUTPUT_PICTURE is the name of the file (together with its relative path) where the file that serves as input for the picture generator is stored
 
 Moreover, "_INPUT.rar" contains a txt-file for each of our test instances. There are 6 main folders, each corresponding to a different instance type:
 - GENERATED_DIM	    (Varying the truck dimensions W x L x H)
@@ -56,3 +57,5 @@ Each txt-file is structured as follows:
 	- the item stackability (1 if the item is stackable, 0 if it is not)
 	- the item flatness (1 if the surface of the item is flat, 0 if it is not) 
 	- the customer index (c_i, only for REALISTIC_C)
+
+Finally, the Python file ``.py'' can be used to visualize the optimal packing layout generated in ``./PATH_AND_NAME_OUTPUT_PICTURE''. One can simply run the Python code after changing the path of the picture file within the code.
