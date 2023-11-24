@@ -3,15 +3,15 @@ This repository contains the code for all algorithms discussed in the paper "Exa
 Our algorithms are coded in C++ and use the commercial solver Gurobi for the ILP models and Cplex for the CP models. 
 The code is divided over 17 folders, each containing the code of one method. The different folders correspond to the following methods in our paper:
 - 0_NOTHING       		| COMPACT-NOP
-- 1_COMPACT_BPP         | COMPACT
+- 1_COMPACT_BPP         	| COMPACT
 - 1_COMPACT_CSP 		| COMPACT-CSP
-- 2_SEQ					| SEQ
-- 2_SEQ_KEP   		    | SEQ-KEP
+- 2_SEQ				| SEQ
+- 2_SEQ_KEP   		    	| SEQ-KEP
 - 3_DEC1     			| DEC1-CB
 - 3_DEC1_SEQ     		| DEC1
-- 4_DEC2				| DEC2-CB
+- 4_DEC2			| DEC2-CB
 - 4_DEC2_SEQ			| DEC2
-- 5_DEC3				| DEC3-CB
+- 5_DEC3			| DEC3-CB
 - 5_DEC3_SEQ			| DEC3
 - 5_DEC3_SEQ_00			| DEC3-0-0
 - 5_DEC3_SEQ_01			| DEC3-1-0 
