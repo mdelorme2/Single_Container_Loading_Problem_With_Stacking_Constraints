@@ -2,6 +2,7 @@ This repository contains the code for all algorithms discussed in the paper "Exa
 
 Our algorithms are coded in C++ and use the commercial solver Gurobi for the ILP models and Cplex for the CP models. 
 The code is divided over 17 folders, each containing the code of one method. The different folders correspond to the following methods in our paper:
+- 0_MILP			| The alternative model using continuous variables referred to at the end of Section 3
 - 0_NOTHING       		| COMPACT-NOP
 - 1_COMPACT_BPP         	| COMPACT
 - 1_COMPACT_CSP 		| COMPACT-CSP
@@ -11,6 +12,7 @@ The code is divided over 17 folders, each containing the code of one method. The
 - 3_DEC1_SEQ     		| DEC1
 - 4_DEC2			| DEC2-CB
 - 4_DEC2_SEQ			| DEC2
+- 4_DEC2_SEQ_FCB		| The version of DEC2 using a dummy callback referred to at the end of Section 7.1
 - 5_DEC3			| DEC3-CB
 - 5_DEC3_SEQ			| DEC3
 - 5_DEC3_SEQ_00			| DEC3-0-0
@@ -58,4 +60,4 @@ Each txt-file is structured as follows:
 	- the item flatness (1 if the surface of the item is flat, 0 if it is not) 
 	- the customer index (c_i, only for REALISTIC_C)
 
-Finally, the Python file ".py" can be used to visualize the optimal packing layout generated in "./PATH_AND_NAME_OUTPUT_PICTURE". One can simply run the Python code after changing the path of the picture file within the code.
+Finally, the Python file "Plot.py" can be used to visualize the optimal packing layout generated in "./PATH_AND_NAME_OUTPUT_PICTURE". One can simply run the Python code after changing the path of the picture file within the code.
